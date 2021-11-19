@@ -19,8 +19,8 @@ jobs:
     steps:
     # Write all the steps you want to schedule
       - uses: actions/checkout@v2
-      - name: Run gen buildtime file
-        run: ./generator.sh
+      - name: Run gen file
+        run: chmod +x ./generator.sh && ./generator.sh
       - name: Update resources
         uses: test-room-7/action-update-file@v1.5.0
         with:
