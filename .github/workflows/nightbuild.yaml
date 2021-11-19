@@ -1,0 +1,29 @@
+# Give the workflow a name. 
+name: Nightly Build
+
+# Trigger Workflow every midnight UTC
+
+on:
+  schedule:
+    - cron: '5 1 */2 * *'  
+  workflow_dispatch: 
+#workflow_dispatch helps run workflow anytime with a single click. 
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build:
+    name: Scheduling
+    # make sure to run this action in Linux env (say ubuntu)
+    runs-on: ubuntu-latest
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Write all the steps you want to schedule
+      - uses: actions/checkout@v2
+      - name: Run gen buildtime file
+        run: ./generator.sh
+      - name: Update resources
+        uses: test-room-7/action-update-file@v1.5.0
+        with:
+          file-path: output.txt
+          commit-msg: Update output.txt
+          github-token: ${{ secrets.GITHUB_TOKEN }}
