@@ -16964,3 +16964,13 @@
 ||rr3.sn-a5mlrnek.googlevideo.com^
 ||rr5---sn-a5mlrn7k.googlevideo.com^
 ||rr5.sn-a5mlrn7k.googlevideo.com^
+||r1.sn-a5meknle.googlevideo.com^
+||r1---sn-hp57ynly.googlevideo.com^
+||r1.sn-hp57ynly.googlevideo.com^
+||r4.sn-5uaezndl.googlevideo.com^
+||r5.sn-p5qs7n7d.googlevideo.com^
+||r5.sn-5hnedn7l.googlevideo.com^
+||r1.sn-nx5s7n7d.googlevideo.com^
+||r3.sn-vgqsknel.googlevideo.com^
+||r3.sn-nx5s7n7d.googlevideo.com^
+||r2.sn-5hnedn7l.googlevideo.com^
